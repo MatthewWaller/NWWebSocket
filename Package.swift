@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.9
 
 import PackageDescription
 
@@ -7,7 +7,8 @@ let package = Package(
     platforms: [.iOS("13.0"),
                 .macOS("10.15"),
                 .tvOS("13.0"),
-                .watchOS("6.0")],
+                .watchOS("6.0"),
+                .visionOS(.v1)],
     products: [
         .library(
             name: "NWWebSocket",
